@@ -12,9 +12,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-08-21',
   modules: [
     '@nuxt/eslint',
+    '@nuxt/icon',
     '@nuxtjs/tailwindcss',
-    'radix-vue/nuxt',
     '@nuxtjs/google-fonts',
+    'reka-ui/nuxt',
   ],
   googleFonts: {
     families: {
@@ -26,5 +27,15 @@ export default defineNuxtConfig({
     config: {
       standalone: false,
     },
+  },
+  icon: {
+    size: '24px',
+    componentName: 'ui-icon',
+    customCollections: [
+      {
+        prefix: 'app-icon',
+        dir: './app/assets/icons',
+      },
+    ],
   },
 })

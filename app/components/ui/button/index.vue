@@ -79,7 +79,7 @@ const Link = resolveComponent('nuxt-link')
     :disabled="disabled || loading"
   >
     <div v-if="loading" class="flex items-center justify-center">
-      <ui-spinner class="text-lg text-current" />
+      <ui-icon name="app-icon:loading" />
     </div>
     <slot v-else />
   </component>
